@@ -11,3 +11,12 @@ let titulo = document.querySelector(".titulo");
 titulo.textContent = "Fake Natty Nutrição!";
 
 //alteração da tabela
+let paciente = document.querySelector("#primeiro-paciente");
+let tdPeso = paciente.querySelector(".info-peso");
+let tdAltura = paciente.querySelector(".info-altura");
+let peso = tdPeso.textContent;
+let altura = tdAltura.textContent;
+
+let imc = peso / (altura * altura);
+
+console.log("O IMC de Paulo é:" + imc);
